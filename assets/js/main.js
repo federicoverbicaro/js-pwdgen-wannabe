@@ -1,20 +1,23 @@
 
 // Chiedi i dati all'utente
 
-// nome persona
-let nomePersona = prompt("Inserisci il tuo nome:");
 
-// cognome persona
-let cognomePersona = prompt("Inserisci il tuo cognome:");
+const form = document.getElementById("form-submit")
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-// colore preferito
-let colorePreferito = prompt("Inserisci il tuo colore preferito:");
+    const nome = document.getElementById("nome")
+    const cognome = document.getElementById("cognome")
+    const colore = document.getElementById("colore")
+    
 
-// password
-const password = nomePersona + cognomePersona + colorePreferito + "23"
+   alert("La tua Password è: " + nome.value + cognome.value + colore.value + "23")
+  });
 
 
-document.writeln(password);
+
+
+
 
 
 
